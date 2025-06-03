@@ -83,4 +83,54 @@
   border-radius: 50%;
 }
 
+.panel {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0; /* Ajuste conforme necessário */
+  border-radius: 4px;
+}
+
+.panel h3 {
+  margin-top: 0;
+}
+
+/* Em src/App.css */
+.contact-list {
+  float: left;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 10px; /* Espaçamento entre lista e chat */
+}
+
+.contact-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 5px;
+}
+
+.contact-list button.selected { /* Exemplo para destacar selecionado via classe */
+  font-weight: bold;
+}
+
+.chat {
+  float: left;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.chat textarea {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Para o Messenger conter os floats */
+.messenger-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
